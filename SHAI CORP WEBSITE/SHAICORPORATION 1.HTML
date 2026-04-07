@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shai Corporation (Pty) Ltd</title>
+<style>
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: black;
+color: white;
+}
+ 
+header {
+text-align: center;
+padding: 40px 20px;
+background: linear-gradient(to bottom, #000, #111);
+}
+
+header img {
+width: 500px;
+margin-bottom: 400px;
+}
+
+h1 { color: gold; font-size: 40px; }
+h2 { color: gold; }
+p { color: #cccccc; }
+
+.btn {
+background: gold;
+color: black;
+padding: 12px 25px;
+border: none;
+cursor: pointer;
+margin-top: 20px;
+font-weight: bold;
+}
+
+section {
+padding: 50px 20px;
+text-align: center;
+}
+
+.services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 25px;
+}
+
+.card {
+background: black;
+border-radius: 10px;
+overflow: hidden;
+border: 1px solid #222;
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 20px;
+}
+
+footer {
+background: black;
+padding: 30px;
+text-align: center;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.more-btn:hover {
+    background-color: #0056b3;
+}
+
+body {
+    margin: 0;
+    background: black; /* optional background */
+}
+.slider {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+    background: black;
+}
+.slider-track {
+    display: inline-block;
+    animation: scroll 30s ease-in-out infinite alternate;
+}
+.slider img {
+    height: 100px;
+    margin: 0 40px;
+    vertical-align: middle;
+}
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+    /* The outer container */
+.mission-vision-section {
+    background: #000; /* Matching your black background */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+    /* The flex wrapper that puts them side-by-side */
+.flex-container {
+    display: flex;
+    justify-content: center; /* Centers the two boxes */
+    gap: 40px; /* Space between Mission and Vision */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the whole block on the page */
+    flex-wrap: wrap; /* Makes it stack vertically on mobile phones */
+}
+
+    /* Styling each individual box */
+.column {
+    flex: 1; /* Makes both sides equal width */
+    min-width: 300px; /* Prevents them from getting too squashed */
+    background: #111; /* Slightly lighter black for contrast */
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid gold; /* Optional accent line */
+    text-align: left; /* Keeps text readable */
+}
+
+.column h2 {
+    margin-top: 0;
+    color: gold;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.column p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+</style>
+</head>
+<body>
+    <section>
+        <img src="IMAGES/SHAI LOGO FINAL.png" alt="Shai Corporation Logo">
+        <h2>ABOUT US</h2>
+        <p>
+            Shai Corporation is a dynamic and forward-thinking youth owmed company established in 2020 with a clear purpose, which is to contribute meaningfully to reducing unemployment and empowering communities through sustainable business practices. Since its inception, the company has grown into a reliable service provider operating across both public and private sectors.
+            We proudly serve industries such as mining, municipal services, and educational institutions, delivering high-quality products and tailored solutions that meet the evolving needs of our clients. Our diverse portfolio includes the supply of conveyor belt equipment, engineering tools, plant hire services, computer-related products, and corporate branding to name a few.
+            At Shai Corporation, we are committed to excellence, innovation, and integrity. We strive to build lasting partnerships with our clients by consistently delivering value, reliability, and professional service.
+        </p>
+        <div class="mission-vision-section">
+        <div class="flex-container">
+        <!-- Mission Side -->
+        <div class="column">
+            <h2>MISSION</h2>
+            <p>
+                To provide high-quality products and services that meet and exceed client expectations across mining, municipal, and educational sectors.
+                To empower local communities by creating job opportunities and supporting skills development initiatives.
+                To maintain strong relationships with clients through professionalism, reliability, and exceptional customer service.
+            </p>
+        </div>
+        <!-- Vision Side -->
+        <div class="column">
+            <h2>VISION</h2>
+            <p>
+                To be a leading and trusted supplier of industrial, technical, and corporate solutions across South Africa, while creating sustainable employment opportunities and contributing to economic growth within our communities.
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+    <section>
+        <h2>OUR PRODUCTS AND SERVICES</h2>
+        <div class="services">
+            <!-- Mining Supply -->
+            <div class="card">
+                <img src="images/belt rolls.jpg" loading="lazy" alt="Conveyor Belt Equipment">
+                <div class="card-content">
+                    <h3>Mining Supply</h3>
+                    <p>Conveyor equipment, Conveyor frames, Conveyor rolls and belts etc.</p>
+                </div>
+            </div>
+            <!-- Plant Hire -->
+            <div class="card">
+                <img src="images/Mining equipment.png" loading="lazy" alt="Excavator Machinery">
+                <div class="card-content">
+                    <h3>Plant Hire</h3>
+                    <p>Excavators, dozers, TLBs and heavy-duty mining equipment etc.</p>
+                </div>
+            </div>
+            <!-- Engineering Tools Supply -->
+            <div class="card">
+                <img src="images/TOOLS IMAGE BOXES.jpg" loading="lazy" alt="Industrial Supply">
+                <div class="card-content">
+                    <h3>Engineering Tools Supply</h3>
+                    <p>Wrenches, pop rivets, Spanners, Hammers, Impact wrenches, Allen keys etc.</p>
+                </div>
+            </div>
+            <!-- IT Products -->
+            <div class="card">
+                <img src="images/computer.jpg" loading="lazy" alt="Computer Equipment">
+                <div class="card-content">
+                    <h3>IT & Computer Products</h3>
+                    <p>Computers, Printers, Cartridges etc.</p>
+                </div>
+            </div>
+            <!--Valves Supply -->
+            <div class="card">
+                <img src="images/Industrial valves on metallic surface.png" loading="lazy" alt="Conveyor Belt Equipment">
+                <div class="card-content">
+                    <h3>Actuator Valves and Industrial Valves Supply</h3>
+                    <p>SGV valves, butterfly valves, Rienzi valves etc.</p>
+                </div>
+            </div>
+            <!--Steel Production and Supply -->
+            <div class="card">
+                <img src="images/steel.jpg" loading="lazy" alt="Conveyor Belt Equipment">
+                <div class="card-content">
+                    <h3>Steel Production and Supply</h3>
+                    <p>Lip channel, Mildsteel Plate, Ibr Sheets, Tube square etc.</p>
+                </div>
+            </div>
+            <!--Air condition Supply -->
+            <div class="card">
+                <img src="images/aircon.png" loading="lazy" alt="Conveyor Belt Equipment">
+                <div class="card-content">
+                    <h3>Air Conditioner Supply</h3>
+                    <p>Domestic and Industrial Air Conditioners: Alliance, LG, Samsung, 9000BTU, 12000BTU, 18000BTU etc.</p>
+                </div>
+            </div>
+            <!--Corporate Branding Supply -->
+            <div class="card">
+                <img src="images/ChatGPT Image Mar 24, 2026, 08_21_34 PM.png" loading="lazy" alt="Conveyor Belt Equipment">
+                <div class="card-content">
+                    <h3>Corporate Branding</h3>
+                    <p>Gazebo, Teardrops, Apparel branding, Corporate gift branding etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <head>
+        <title>Accreditation Slider</title>
+    </head>
+    <body>
+        <h2 align="center">ACCREDITATIONS</h2>
+        <div class="slider">
+            <div class="slider-track">
+                <!-- Replace with your actual image paths -->
+                <img src="IMAGES/KING TONY.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/GEDORE.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/ACDC.png" loading="lazy" alt="GEDORE Tools">
+                <img src="IMAGES/tarsssus.jpg" loading="lazy" alt="ACDC">
+                <img src="IMAGES/KING TONY.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/GEDORE.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/ACDC.png" loading="lazy" alt="GEDORE Tools">
+                <img src="IMAGES/tarsssus.jpg" loading="lazy" alt="ACDC">
+                <!-- Duplicate for smooth looping -->
+                <img src="IMAGES/KING TONY.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/GEDORE.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/ACDC.png" loading="lazy" alt="GEDORE Tools">
+                <img src="IMAGES/tarsssus.jpg" loading="lazy" alt="ACDC">
+                <img src="IMAGES/KING TONY.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/GEDORE.png" loading="lazy" alt="King Tony">
+                <img src="IMAGES/ACDC.png" loading="lazy" alt="GEDORE Tools">
+                <img src="IMAGES/tarsssus.jpg" loading="lazy" alt="ACDC">
+            </div>
+        </div>
+    </body>
+    <section>
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 650 Calvin Ngobeni Drive, Namakgale, 1391</p>
+        <p><strong>Phone:</strong> 061 585 7375/ 071 764 5248</p>
+        <p><strong>Enquiry & Quotes Email:</strong> Info@shaicorporation.co.za</p>
+        <iframe width="80%" height="350" style="border:0" loading="lazy" allowfullscreen
+            src="https://www.google.com/maps?q=650+Calvin+Ngobeni+Drive+Zone+C+Namakgale+1391&output=embed">
+        </iframe>
+    </section>
+    <footer>
+        <p>© 2026 Shai Corporation (Pty) Ltd. All rights reserved.</p>
+    </footer>
+</body>
+<!-- </html> -->
