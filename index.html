@@ -259,11 +259,32 @@ body {
     color: #ccc;
 }
 
+.logo-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    /* This makes the logo responsive */
+    max-width: 100%;    /* It will never be wider than the phone screen */
+    height: auto;       /* Maintains the correct proportions */
+    width: 300px;       /* Set this to your preferred desktop size */
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+    .logo-container img {
+        width: 200px;   /* Makes it slightly smaller on small phones */
+    }
+}
+
 </style>
 </head>
 <body>
     <section>
-        <img src="IMAGES/SHAI LOGO FINAL.png" alt="Shai Corporation Logo">
+        <div class="logo-container">
+            <img src="IMAGES/SHAI LOGO FINAL.png" alt="Shai Corporation Logo">
+        </div>
         <h2>ABOUT US</h2>
         <p>
             Shai Corporation is a dynamic and forward-thinking youth owmed company established in 2020 with a clear purpose, which is to contribute meaningfully to reducing unemployment and empowering communities through sustainable business practices. Since its inception, the company has grown into a reliable service provider operating across both public and private sectors.
